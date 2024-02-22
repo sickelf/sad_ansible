@@ -1,0 +1,9 @@
+plugin: community.docker.docker_containers
+docker_host: unix://var/run/docker.sock
+filters:
+  - include: >-
+      inventory_hostname.startswith("toy-srv") 
+  - exclude: true
+keyed_groups:
+  - prefix: toy-srv
+    key: docker_platform
