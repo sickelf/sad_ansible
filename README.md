@@ -1,7 +1,10 @@
 This exercise means to evaluate your ansible basic knowledge by emulating a couple of servers running in your localenv.
 
 # Prerequisites
-- Have a arm64 or amd64 Linux or Unix-like env (e.g. darwin or MacOSX). If you need other arch, please reach out. If you use WSL (Windows Subsystem for Linux) on amd64, it is supported, too.
+- Have a Linux or Unix-like env. Supported platforms are in the following. If you need other platform support, please reach out early before continue the exercise.
+  - *_amd64 (Generic Linux with amd64 CPU)
+  - *_amd64_wsl (amd64 CPU on WSL - Windows Subsystem for Linux)
+  - *_arm64 (arm64 CPU like Apple M series)
 - Have docker installed and set your user with correct group such that your user account can run docker without sudo
 - Have ansible install. e.g., if you are on ubuntu, do `sudo apt install ansible`
 - Any dependencies to make both `ansible` and `docker` run on your platform. We'll prepare the rest.
