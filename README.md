@@ -2,9 +2,9 @@ This exercise means to evaluate your ansible basic knowledge by emulating a coup
 
 # Prerequisites
 - Have a Linux or Unix-like env. Supported platforms are in the following. If you need other platform support, please reach out early before continue the exercise.
-  - *_amd64 (Generic Linux with amd64 CPU)
-  - *_amd64_wsl (amd64 CPU on WSL - Windows Subsystem for Linux)
-  - *_arm64 (arm64 CPU like Apple M series)
+  - Generic Linux with amd64 CPU
+  - Windows Subsystem for Linux (WSL) with amd64 CPU
+  - MacOSX with arm64 CPU like Apple M series
 - Have docker installed and set your user with correct group such that your user account can run docker without sudo
 - Have ansible install. e.g., if you are on ubuntu, do `sudo apt install ansible`
 - Any dependencies to make both `ansible` and `docker` run on your platform. We'll prepare the rest.
