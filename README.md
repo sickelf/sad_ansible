@@ -52,10 +52,10 @@ $ ansible-inventory --graph
 # Next step
 Read probX.md carefully and follow the guidance to complete your submission.
 You should expect 4 of them:
-- prob1/prob1.md
-- prob2/prob2.md
-- prob3/prob3.md
-- prob4/prob4.md
+- [prob1/prob1.md](./prob1/prob1.md)
+- [prob2/prob2.md](./prob2/prob2.md)
+- [prob3/prob3.md](./prob3/prob3.md)
+- [prob4/prob4.md](./prob4/prob4.md)
 
 
 # Cleanup env
