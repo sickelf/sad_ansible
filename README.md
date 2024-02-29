@@ -15,14 +15,8 @@ You will need to use ansible to interact with them by using the best of your kno
 
 First, make sure your platform have docker engine (docker Desktop or docker daemon) running. Then, for each problem, run the corresponding prep_env command:
 ```
-# If running on amd64 generic Linux platform
-$ prob1/prep_env_p1_amd64
-
-# If running on MacOSX M series or other arm64 platform
-$ prob1/prep_env_p1_arm64
-
-# If running on amd64 WSL
-$ prob1/prep_env_p1_amd64_wsl
+# For example, to set up env for Problem 1
+$ prob1/prep_env_p1.sh
 ```
 The command will wipe out any containers created for this exercise and spawn new ones for you to get started for each problem.
 
