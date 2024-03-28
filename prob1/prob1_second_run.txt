@@ -1,0 +1,15 @@
+Using /Users/jobe/Code/sad_ansible/ansible.cfg as config file
+Using inventory plugin 'ansible_collections.community.docker.plugins.inventory.docker_containers' to process inventory source '/Users/jobe/Code/sad_ansible/.ansible/hosts/main_docker.yml'
+
+PLAY [Prob1 Playbook] **********************************************************
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-2] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-1] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-3] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+PLAY RECAP *********************************************************************
+toy-srv-1                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-2                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-3                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

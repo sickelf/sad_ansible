@@ -1,0 +1,157 @@
+Using /Users/jobe/Code/sad_ansible/ansible.cfg as config file
+Using inventory plugin 'ansible_collections.community.docker.plugins.inventory.docker_containers' to process inventory source '/Users/jobe/Code/sad_ansible/.ansible/hosts/main_docker.yml'
+
+PLAY [Prob4 Playbook] **********************************************************
+
+TASK [Install packages] ********************************************************
+ok: [toy-srv-3] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-1] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-4] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-6] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-2] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-5] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-7] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-10] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-8] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-11] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-9] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-15] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-12] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-13] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-14] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-16] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-17] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-20] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-18] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-19] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-21] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-25] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-22] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-23] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-24] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-27] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-28] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-26] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+ok: [toy-srv-30] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-1] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-2] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-3] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+TASK [Install packages] ********************************************************
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-4] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-6] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-5] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-7] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-10] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-9] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+TASK [Install packages] ********************************************************
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-11] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-8] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-12] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-14] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-15] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-13] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-18] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-16] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-17] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-20] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-22] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-19] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+TASK [Install packages] ********************************************************
+ok: [toy-srv-29] => (item=jq=1.7.1-r0) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq=1.7.1-r0", "msg": "package(s) already installed"}
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-23] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-21] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-24] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-25] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+TASK [Deploy shell script] *****************************************************
+ok: [toy-srv-2] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-1] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-3] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-4] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-8] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-9] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-7] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-6] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-5] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-11] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-13] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-12] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-10] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-14] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-16] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-18] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-15] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-17] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-19] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-28] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-27] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+TASK [Deploy shell script] *****************************************************
+ok: [toy-srv-20] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-26] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+ok: [toy-srv-30] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+TASK [Deploy shell script] *****************************************************
+ok: [toy-srv-22] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-25] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-23] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+
+TASK [Start service] ***********************************************************
+ok: [toy-srv-29] => {"changed": false, "cmd": "/app/toy-srv &", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' exists", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG exists", "stdout_lines": ["skipped, since /app/SRV_CONFIG exists"]}
+
+TASK [Deploy shell script] *****************************************************
+ok: [toy-srv-24] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-21] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-28] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-30] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-26] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-29] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-27] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+
+PLAY RECAP *********************************************************************
+toy-srv-1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-10                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-11                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-12                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-13                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-14                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-15                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-16                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-17                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-18                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-19                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-2                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-20                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-21                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-22                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-23                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-24                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-25                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-26                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-27                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-28                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-29                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-3                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-30                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-4                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-5                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-6                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-7                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-8                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-9                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

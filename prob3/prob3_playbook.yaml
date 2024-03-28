@@ -1,0 +1,23 @@
+---
+- name: Prob3 Playbook
+  hosts: toy_srv_linux
+  gather_facts: false
+
+  tasks:
+  - name: Main
+    block:
+      - name: Register service
+        ansible.builtin.shell: /app/register-config
+        args:
+          removes: /app/SRV_CONFIG
+        register: results
+
+      - name: Print stdout information from the previous task
+        ansible.builtin.debug:
+          var: results.stdout
+        when: results.stdout | length > 0
+    rescue:
+      - name: Print stderr information from the previous task
+        ansible.builtin.debug:
+          var: results.stderr
+        when: results.stderr | length > 0

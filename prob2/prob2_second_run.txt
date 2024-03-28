@@ -1,0 +1,20 @@
+Using /Users/jobe/Code/sad_ansible/ansible.cfg as config file
+Using inventory plugin 'ansible_collections.community.docker.plugins.inventory.docker_containers' to process inventory source '/Users/jobe/Code/sad_ansible/.ansible/hosts/main_docker.yml'
+
+PLAY [Prob2 Playbook] **********************************************************
+
+TASK [Install packages] ********************************************************
+ok: [toy-srv-3] => (item=jq) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq", "msg": "package(s) already installed"}
+ok: [toy-srv-1] => (item=jq) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq", "msg": "package(s) already installed"}
+ok: [toy-srv-2] => (item=jq) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": false, "item": "jq", "msg": "package(s) already installed"}
+
+TASK [Deploy shell script] *****************************************************
+ok: [toy-srv-2] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-3] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+ok: [toy-srv-1] => {"changed": false, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/app/get_config", "size": 55, "state": "file", "uid": 0}
+
+PLAY RECAP *********************************************************************
+toy-srv-1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-2                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-3                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

@@ -1,0 +1,26 @@
+Using /Users/jobe/Code/sad_ansible/ansible.cfg as config file
+Using inventory plugin 'ansible_collections.community.docker.plugins.inventory.docker_containers' to process inventory source '/Users/jobe/Code/sad_ansible/.ansible/hosts/main_docker.yml'
+
+PLAY [Prob3 Playbook] **********************************************************
+
+TASK [Register service] ********************************************************
+changed: [toy-srv-3] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": true, "cmd": "/app/register-config", "delta": "0:00:00.001447", "end": "2024-03-28 04:31:16.456233", "msg": "", "rc": 0, "start": "2024-03-28 04:31:16.454786", "stderr": "", "stderr_lines": [], "stdout": "Register the server to DB with config 1073741823", "stdout_lines": ["Register the server to DB with config 1073741823"]}
+changed: [toy-srv-2] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": true, "cmd": "/app/register-config", "delta": "0:00:00.001970", "end": "2024-03-28 04:31:16.442152", "msg": "", "rc": 0, "start": "2024-03-28 04:31:16.440182", "stderr": "", "stderr_lines": [], "stdout": "Register the server to DB with config 1073741823", "stdout_lines": ["Register the server to DB with config 1073741823"]}
+changed: [toy-srv-1] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": true, "cmd": "/app/register-config", "delta": "0:00:00.002654", "end": "2024-03-28 04:31:16.438272", "msg": "", "rc": 0, "start": "2024-03-28 04:31:16.435618", "stderr": "", "stderr_lines": [], "stdout": "Register the server to DB with config 1073741823", "stdout_lines": ["Register the server to DB with config 1073741823"]}
+
+TASK [Print stdout information from the previous task] *************************
+ok: [toy-srv-3] => {
+    "results.stdout": "Register the server to DB with config 1073741823"
+}
+ok: [toy-srv-1] => {
+    "results.stdout": "Register the server to DB with config 1073741823"
+}
+ok: [toy-srv-2] => {
+    "results.stdout": "Register the server to DB with config 1073741823"
+}
+
+PLAY RECAP *********************************************************************
+toy-srv-1                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-2                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-3                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

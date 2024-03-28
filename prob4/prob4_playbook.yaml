@@ -1,0 +1,45 @@
+---
+- name: Prob4 Playbook
+  hosts: toy_srv_linux
+  strategy: free
+#  serial: 2
+  gather_facts: false
+
+  tasks:
+  - name: Main
+    block:
+    - name: Install packages
+      ansible.builtin.package:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - jq=1.7.1-r0
+      register: results
+
+    - name: Start service
+      ansible.builtin.shell: /app/toy-srv &
+      args:
+        creates: /app/SRV_CONFIG
+      register: results
+
+    - name: Deploy shell script
+      ansible.builtin.copy:
+        src: ./get_config
+        dest: /app/get_config
+        owner: root
+        group: root
+        mode: '0755'
+      notify:
+        - Run get_config
+      register: results
+
+    rescue:
+    - name: Print stderr information from the previous task
+      ansible.builtin.debug:
+        var: results.stderr
+      when: results.stderr | length > 0
+
+  handlers:
+    - name: Run get_config
+      ansible.builtin.shell: /app/get_config
+      register: results

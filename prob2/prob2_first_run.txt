@@ -1,0 +1,36 @@
+Using /Users/jobe/Code/sad_ansible/ansible.cfg as config file
+Using inventory plugin 'ansible_collections.community.docker.plugins.inventory.docker_containers' to process inventory source '/Users/jobe/Code/sad_ansible/.ansible/hosts/main_docker.yml'
+
+PLAY [Prob2 Playbook] **********************************************************
+
+TASK [Install packages] ********************************************************
+changed: [toy-srv-3] => (item=jq) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": true, "item": "jq", "msg": "installed jq package(s)", "packages": ["oniguruma", "jq"], "stderr": "", "stderr_lines": [], "stdout": "fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/aarch64/APKINDEX.tar.gz\nfetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/aarch64/APKINDEX.tar.gz\n(1/2) Installing oniguruma (6.9.9-r0)\n(2/2) Installing jq (1.7.1-r0)\nExecuting busybox-1.36.1-r15.trigger\nOK: 199 MiB in 46 packages\n", "stdout_lines": ["fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/aarch64/APKINDEX.tar.gz", "fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/aarch64/APKINDEX.tar.gz", "(1/2) Installing oniguruma (6.9.9-r0)", "(2/2) Installing jq (1.7.1-r0)", "Executing busybox-1.36.1-r15.trigger", "OK: 199 MiB in 46 packages"]}
+changed: [toy-srv-2] => (item=jq) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": true, "item": "jq", "msg": "installed jq package(s)", "packages": ["oniguruma", "jq"], "stderr": "", "stderr_lines": [], "stdout": "fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/aarch64/APKINDEX.tar.gz\nfetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/aarch64/APKINDEX.tar.gz\n(1/2) Installing oniguruma (6.9.9-r0)\n(2/2) Installing jq (1.7.1-r0)\nExecuting busybox-1.36.1-r15.trigger\nOK: 199 MiB in 46 packages\n", "stdout_lines": ["fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/aarch64/APKINDEX.tar.gz", "fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/aarch64/APKINDEX.tar.gz", "(1/2) Installing oniguruma (6.9.9-r0)", "(2/2) Installing jq (1.7.1-r0)", "Executing busybox-1.36.1-r15.trigger", "OK: 199 MiB in 46 packages"]}
+changed: [toy-srv-1] => (item=jq) => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "ansible_loop_var": "item", "changed": true, "item": "jq", "msg": "installed jq package(s)", "packages": ["oniguruma", "jq"], "stderr": "", "stderr_lines": [], "stdout": "fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/aarch64/APKINDEX.tar.gz\nfetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/aarch64/APKINDEX.tar.gz\n(1/2) Installing oniguruma (6.9.9-r0)\n(2/2) Installing jq (1.7.1-r0)\nExecuting busybox-1.36.1-r15.trigger\nOK: 199 MiB in 46 packages\n", "stdout_lines": ["fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/aarch64/APKINDEX.tar.gz", "fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/aarch64/APKINDEX.tar.gz", "(1/2) Installing oniguruma (6.9.9-r0)", "(2/2) Installing jq (1.7.1-r0)", "Executing busybox-1.36.1-r15.trigger", "OK: 199 MiB in 46 packages"]}
+
+TASK [Deploy shell script] *****************************************************
+changed: [toy-srv-2] => {"changed": true, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "md5sum": "fc25d7df542da4a7afa4584a57ecd3ae", "mode": "0755", "owner": "root", "size": 55, "src": "/root/.ansible/tmp/ansible-tmp-1711640349.364067-30959-148579210768913/source", "state": "file", "uid": 0}
+changed: [toy-srv-3] => {"changed": true, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "md5sum": "fc25d7df542da4a7afa4584a57ecd3ae", "mode": "0755", "owner": "root", "size": 55, "src": "/root/.ansible/tmp/ansible-tmp-1711640349.362008-30958-134479681394110/source", "state": "file", "uid": 0}
+changed: [toy-srv-1] => {"changed": true, "checksum": "73802937dc75907d037606318f93210d9493f41c", "dest": "/app/get_config", "gid": 0, "group": "root", "md5sum": "fc25d7df542da4a7afa4584a57ecd3ae", "mode": "0755", "owner": "root", "size": 55, "src": "/root/.ansible/tmp/ansible-tmp-1711640349.371994-30960-254039185230473/source", "state": "file", "uid": 0}
+
+RUNNING HANDLER [Run get_config] ***********************************************
+changed: [toy-srv-2] => {"changed": true, "cmd": "/app/get_config", "delta": "0:00:00.007021", "end": "2024-03-28 15:39:10.212154", "msg": "", "rc": 0, "start": "2024-03-28 15:39:10.205133", "stderr": "", "stderr_lines": [], "stdout": "1073741823", "stdout_lines": ["1073741823"]}
+changed: [toy-srv-1] => {"changed": true, "cmd": "/app/get_config", "delta": "0:00:00.005712", "end": "2024-03-28 15:39:10.216385", "msg": "", "rc": 0, "start": "2024-03-28 15:39:10.210673", "stderr": "", "stderr_lines": [], "stdout": "1073741823", "stdout_lines": ["1073741823"]}
+changed: [toy-srv-3] => {"changed": true, "cmd": "/app/get_config", "delta": "0:00:00.007036", "end": "2024-03-28 15:39:10.219064", "msg": "", "rc": 0, "start": "2024-03-28 15:39:10.212028", "stderr": "", "stderr_lines": [], "stdout": "1073741823", "stdout_lines": ["1073741823"]}
+
+RUNNING HANDLER [Print stdout] *************************************************
+ok: [toy-srv-2] => {
+    "results.stdout": "1073741823"
+}
+ok: [toy-srv-3] => {
+    "results.stdout": "1073741823"
+}
+ok: [toy-srv-1] => {
+    "results.stdout": "1073741823"
+}
+
+PLAY RECAP *********************************************************************
+toy-srv-1                  : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-2                  : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-3                  : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

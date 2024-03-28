@@ -1,0 +1,36 @@
+Using /Users/jobe/Code/sad_ansible/ansible.cfg as config file
+Using inventory plugin 'ansible_collections.community.docker.plugins.inventory.docker_containers' to process inventory source '/Users/jobe/Code/sad_ansible/.ansible/hosts/main_docker.yml'
+
+PLAY [Prob3 Playbook] **********************************************************
+
+TASK [Register service] ********************************************************
+ok: [toy-srv-2] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": false, "cmd": "/app/register-config", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' does not exist", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG does not exist", "stdout_lines": ["skipped, since /app/SRV_CONFIG does not exist"]}
+changed: [toy-srv-4] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": true, "cmd": "/app/register-config", "delta": "0:00:00.008479", "end": "2024-03-28 04:31:52.486352", "msg": "", "rc": 0, "start": "2024-03-28 04:31:52.477873", "stderr": "", "stderr_lines": [], "stdout": "Register the server to DB with config 1073741823", "stdout_lines": ["Register the server to DB with config 1073741823"]}
+ok: [toy-srv-1] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": false, "cmd": "/app/register-config", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' does not exist", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG does not exist", "stdout_lines": ["skipped, since /app/SRV_CONFIG does not exist"]}
+ok: [toy-srv-3] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": false, "cmd": "/app/register-config", "delta": null, "end": null, "msg": "Did not run command since '/app/SRV_CONFIG' does not exist", "rc": 0, "start": null, "stderr": "", "stderr_lines": [], "stdout": "skipped, since /app/SRV_CONFIG does not exist", "stdout_lines": ["skipped, since /app/SRV_CONFIG does not exist"]}
+changed: [toy-srv-5] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.11"}, "changed": true, "cmd": "/app/register-config", "delta": "0:00:00.003104", "end": "2024-03-28 04:31:52.630668", "msg": "", "rc": 0, "start": "2024-03-28 04:31:52.627564", "stderr": "", "stderr_lines": [], "stdout": "Register the server to DB with config 1073741823", "stdout_lines": ["Register the server to DB with config 1073741823"]}
+
+TASK [Print stdout information from the previous task] *************************
+ok: [toy-srv-4] => {
+    "results.stdout": "Register the server to DB with config 1073741823"
+}
+ok: [toy-srv-5] => {
+    "results.stdout": "Register the server to DB with config 1073741823"
+}
+ok: [toy-srv-2] => {
+    "results.stdout": "skipped, since /app/SRV_CONFIG does not exist"
+}
+ok: [toy-srv-3] => {
+    "results.stdout": "skipped, since /app/SRV_CONFIG does not exist"
+}
+ok: [toy-srv-1] => {
+    "results.stdout": "skipped, since /app/SRV_CONFIG does not exist"
+}
+
+PLAY RECAP *********************************************************************
+toy-srv-1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-2                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-3                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-4                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+toy-srv-5                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
