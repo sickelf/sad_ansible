@@ -1,3 +1,8 @@
+
 # If you use some non-default parameters, why?
+gather_facts   | Nothing the in the play requires facts. Disabling to speed up playbook
+copy.*         | Set various options to be able to execute get_config
+notify         | Setup handler to run script only if file changes
 
 # Any trouble when you do this task? If so, how did you tackle them?
+jquery wasn't installed so had to install to run the script untouched. Used a loop to make it easy to add packages later if needed.

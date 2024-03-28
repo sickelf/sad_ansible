@@ -1,1 +1,10 @@
-# TODO: Start your playbook here
+---
+- name: Prob1 Playbook
+  hosts: toy_srv_linux
+  gather_facts: false
+
+  tasks:
+  - name: Start service
+    ansible.builtin.shell: /app/toy-srv &
+    args:
+      creates: /app/SRV_CONFIG

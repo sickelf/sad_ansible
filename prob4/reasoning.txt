@@ -1,1 +1,23 @@
 # Put any thoughts here
+> How would you design your rollout strategy?
+There are many solutions to this problem. The most correct one will be geared to the workload, how long tasks to complete, etc.
+- For a large number of inventory hosts, it might make sense to splice the run across multiple ansible workers; AWX has this feature for example, but it could be achieve manually as well.
+- Running docker-pull from the inventory hosts locally might be a good option too.
+- Forks would be used to increase number of parallel workers.
+- On the first run, I'd use serial options to give the change a slow start in lower environments and then production.
+- Pre and post tasks will pull the ansible hosts in and out of monitoring. 
+- Some soft of memory-stored fact caching would be enabled if facts needed with fact gathering limited to required subset.
+- For a very long running deployment, one could write cachable set_facts then write a script to monitor them in real-time during deploy or post to a microservice to visualize the state of the deployment in real-time.
+- All scripts are profiled by enabling callback in ansible.cfg to figure out how to speed up deployment:
+    [defaults]
+    callbacks_enabled=ansible.posix.profile_tasks
+
+> How do you deal with incidents and conduct necessary revert for failures?
+Ansible cannot revert changes by default. Depending on the plays involved, a rollback script might need to be run. If an older play could be safely run over a newer deploy, then I'd just version to the play and run an earlier version of it to revert from a failure.
+
+I wrote a sample play to tie together previous problems. I create a prep script (prep_env_p4.sh) you can run to spin up a number of containers (NUM_SERVERS). The script also randomly breaks some things (CHAOS_CHANCE).
+
+./prep_env_p4.sh
+ansible-playbook -v ./prob4_playbook.yaml > prob4_first_run.txt
+ansible-playbook -v ./prob4_playbook.yaml > prob4_second_run.txt
+../realclean_env.sh

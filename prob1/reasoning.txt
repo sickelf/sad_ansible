@@ -1,3 +1,8 @@
 # If you use some non-default parameters, why?
+gather_facts:  | Nothing the in the play requires facts. Disabling to speed up playbook
+shell.creates: | Since we know the the service is running if the config file exists, we can use create to determine whether we launch another toy-srv
 
 # Any trouble when you do this task? If so, how did you tackle them?
+On my first attempt, I used the command builtin, but the play hung. I exec'd into the docker container and ran the command manually and discovered it ran in the foreground. I changed the play to use the shell builtin and added an ampersand to the command to fix it.
+
+I also ran into an issue skipping back and forth between problems. prep_env_p1.sh only cleans up the first 3 containers but some problems create for than 3. I wrote a realclean_env.sh in the directory above to clean any number of containers.

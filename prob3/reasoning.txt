@@ -1,3 +1,6 @@
 # If you use some non-default parameters, why?
+gather_facts   | Nothing the in the play requires facts. Disabling to speed up playbook
+shell.removes  | Makes sure the config exists before running the script
 
 # Any trouble when you do this task? If so, how did you tackle them?
+The naming convetion for the run output files changed.
